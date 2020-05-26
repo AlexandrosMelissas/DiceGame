@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="player player1 turn">
+            <h2 class="player_heading player1_heading">Player 1</h2>
+            <h2 class="global_score global_score-1">0</h2>
+            <div class="current_score">
+                <p class="current_score-heading">Current</p>
+                <p class="current_score-number current_score-1">0</p>
+            </div>
+
+        </div>
+        <div class="player player2">
+            <h2 class="player_heading player2_heading">Player 2</h2>
+            <h2 class="global_score global_score-2">0</h2>
+
+            <div class="current_score">
+                <p class="current_score-heading">Current</p>
+                <p class="current_score-number current_score-2">0</p>
+            </div>
+            
+
+        </div>
+        <div class="controls new_game"><ion-icon class="controls-icon new_game-icon" name="add-circle-outline"></ion-icon>New Game</div>
+        <div class="controls roll_dice"><ion-icon class="controls-icon roll_dice-icon" name="refresh-circle-outline"></ion-icon>Roll Dice</div>
+        <div class="controls keep"><ion-icon class="controls-icon keep-icon" name="pause-circle-outline"></ion-icon>Keep</div>
+        <img class="dice" src="dice-1.png" >
+
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>

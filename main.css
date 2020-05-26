@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary-1 : teal;
+    --color-primary-2: #20a7a7;
+    --color-white-1 : #ffffff;
+    --color-white-soft : #e7e5e5;
+
+    --color-gray-dark : #333;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right top, var(--color-primary-1),var(--color-primary-2));
+    background-size: cover;
+    background-position: center;
+    font-family: 'Lato';
+    font-size: 62.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-dark);
+}
+
+.container {
+    width: 70%;
+    height: 70%;
+    background-color: var(--color-white-1);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+
+.player {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.player_heading {
+    font-size: 3rem;
+    margin-top: 2rem;
+    font-weight: 100;
+}
+
+.global_score {
+    font-size: 5rem;
+}
+
+.current_score {
+    width: 40%;
+    padding: 1rem 0;
+    background-color: var(--color-primary-2);
+    margin: 0 auto;
+}
+
+.current_score-heading {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.current_score-number {
+    font-size: 2rem;
+}
+
+
+.turn {
+
+    background-color: var(--color-white-soft);
+
+}
+
+.controls {
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+}
+
+.controls:hover .controls-icon {
+    padding-right: .5rem;
+}
+.new_game {
+    top: 3rem;
+}
+.controls-icon {
+    vertical-align: middle;
+    margin-right: .4rem;
+    margin-bottom: .2rem;
+    transition: padding .3s;
+}
+
+.roll_dice {
+    bottom: 7rem;
+}
+
+.keep {
+    bottom: 3rem;
+}
+
+.dice {
+    width: 10%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0,.5);
+    transform: translate(-50%,-60%);
+    display: none;
+}
