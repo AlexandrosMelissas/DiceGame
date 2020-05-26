@@ -133,6 +133,7 @@ function startNewGame() {
     gs2.textContent = 0
     hasTurn = 'player1'
     gameFinished = false
+    dice.style.display = 'none'
     player1heading.textContent = 'Player 1'
     player2heading.textContent = 'Player 2'
     player1div.classList.remove('turn')
