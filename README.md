@@ -1,6 +1,9 @@
 # DiceGame
 A 2 player dice luck game made with Vanilla Javascript
 
+# Link 
+https://alexandrosmelissas.github.io/DiceGame/
+
 # Rules 
 
 1. The player who gathers 100 global points wins.
